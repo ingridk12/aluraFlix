@@ -8,7 +8,7 @@
 }
 .categoria h3 {
   font-weight: 400;
-  border-bottom: 4px solid #6bd1ff;
+  border-bottom: 4px solid;
   display: inline-block;
   padding-bottom: 8px;
 }
