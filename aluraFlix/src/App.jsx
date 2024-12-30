@@ -5,6 +5,9 @@ import Header from "./componentes/Header/Header";
 import Footer from "./componentes/Footer/Footer";
 import Categoria from "./componentes/Categorias/Categoria";
 import Banner from "./componentes/Banner/Banner";
+import NuevoVideo from "./pages/NuevoVideo"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 function App() {
   const [count, setCount] = useState(0);
   //lista videos Destacados
@@ -38,7 +41,10 @@ function App() {
     },
   ];
   return (
-    <>
+    <Router>
+      <Routes>
+        <Route path="/NuevoVideo" element={<NuevoVideo />} />
+      </Routes>
       <div>
         <Header />
         <div>
@@ -49,7 +55,7 @@ function App() {
         })}
         <Footer />
       </div>
-    </>
+    </Router>
   );
 }
 
