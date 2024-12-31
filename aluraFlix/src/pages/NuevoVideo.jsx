@@ -33,6 +33,7 @@ const NuevoVideo = () => {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <div className="form-group">
+        <label className="form-label" htmlFor="title">Agrega un nuevo video</label>
         <label htmlFor="title">Título</label>
         <input
           type="text"

@@ -1,8 +1,20 @@
 body {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #fff;
+   
+  }
+  .form-label{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    justify-items: center;
+    font-size: 32px;
+    border-top: 2px solid #2271D1;
   }
   
   .form-container {
@@ -12,6 +24,7 @@ body {
     background-color: #1f1f1f;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
   }
   
   h1 {
@@ -35,20 +48,25 @@ body {
   .form-group {
     display: flex;
     flex-direction: column;
+    
   }
   
   label {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    
   }
   
   input,
   textarea,
   select {
+  
     padding: 0.8rem;
     border: none;
     border-radius: 4px;
     font-size: 1rem;
+    width: 80%;
+    border: 2px solid #2271D1;
   }
   
   input:focus,
@@ -64,11 +82,14 @@ body {
   
   .form-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
   }
   
   .btn-save,
   .btn-reset {
+    
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
     font-weight: bold;
