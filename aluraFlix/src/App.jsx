@@ -50,11 +50,6 @@ function App() {
       <Routes>
         <Route path="/NuevoVideo" element={<NuevoVideo />} />
       </Routes>
-      
-          
-        {categorias.map((categoria) => {
-          return <Categoria datos={categoria} key={categoria.titulo} />;
-        })}
         <Footer />
       </div>
     </Router>

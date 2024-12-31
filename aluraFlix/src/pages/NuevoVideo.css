@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  textarea,
+  select {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: 2px solid #1f80e0;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-save,
+  .btn-reset {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-save {
+    background-color: #1f80e0;
+    color: #fff;
+  }
+  
+  .btn-reset {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .btn-save:hover {
+    background-color: #1465b7;
+  }
+  
+  .btn-reset:hover {
+    background-color: #666;
+  }
+  

@@ -1,8 +1,28 @@
 
 .encabezado{
+    display: flex;
+    justify-content: space-between;
     background-color: #0000;
     text-align: center;
+    color: #2271D1;
+    border-bottom: 2px solid #2271D1;
+    margin-bottom: 2rem;
+    
+    
 }
-.encabezado img{
-    max-width: 100%;
-}
+.btn-new-video {
+  padding: 0.5rem 1rem;
+    background-color: #1f80e0;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .boton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px;
+    gap: 20px;
+  }
