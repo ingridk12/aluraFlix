@@ -42,14 +42,16 @@ function App() {
   ];
   return (
     <Router>
-      <Routes>
-        <Route path="/NuevoVideo" element={<NuevoVideo />} />
-      </Routes>
       <div>
         <Header />
         <div>
-          <Banner videos={videosDestacados} />
+        <Banner videos={videosDestacados} />
         </div>
+      <Routes>
+        <Route path="/NuevoVideo" element={<NuevoVideo />} />
+      </Routes>
+      
+          
         {categorias.map((categoria) => {
           return <Categoria datos={categoria} key={categoria.titulo} />;
         })}
