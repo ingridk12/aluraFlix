@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import Header from "./componentes/Header/Header";
 import Footer from "./componentes/Footer/Footer";
 import Categoria from "./componentes/Categorias/Categoria";
@@ -8,6 +6,7 @@ import Banner from "./componentes/Banner/Banner";
 import NuevoVideo from "./pages/NuevoVideo"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ListPosts from "./componentes/ListPosts";
+import Post from "./pages/posts"
 function App() {
   const [count, setCount] = useState(0);
   //lista videos Destacados
@@ -50,6 +49,7 @@ function App() {
         </div>
       <Routes>
         <Route path="/NuevoVideo" element={<NuevoVideo />} />
+        <Route path="/posts/:id" element={<Post />} />
       </Routes>
         <Footer />
       </div>
