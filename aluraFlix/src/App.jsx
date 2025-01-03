@@ -7,7 +7,7 @@ import Categoria from "./componentes/Categorias/Categoria";
 import Banner from "./componentes/Banner/Banner";
 import NuevoVideo from "./pages/NuevoVideo"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import ListPosts from "./componentes/ListPosts";
 function App() {
   const [count, setCount] = useState(0);
   //lista videos Destacados
@@ -46,6 +46,7 @@ function App() {
         <Header />
         <div>
         <Banner videos={videosDestacados} />
+        <ListPosts url={"/posts"}/>
         </div>
       <Routes>
         <Route path="/NuevoVideo" element={<NuevoVideo />} />

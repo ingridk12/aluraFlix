@@ -1,3 +1,5 @@
+import ListPosts from "../ListPosts";
+
 import "./Header.css"
 import { Link } from "react-router-dom";
 function Header (){
@@ -13,7 +15,9 @@ function Header (){
         <button className="btn-new-video">HOME</button>
         </Link>
         </div>
+            
              </header>
+             
    
 )
 }
