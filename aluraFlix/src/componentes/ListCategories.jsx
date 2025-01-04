@@ -1,7 +1,7 @@
     import { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import { buscar } from "../Api/Api";
-import "../componentes/Blog.css"
+import "../componentes/Categorias/Categoria.css"
 
 const ListCategories = () => {
 
@@ -12,11 +12,11 @@ const ListCategories = () => {
     }, [])
 
     return (
-        <ul className="category-list container flex">
+        <ul className="categoria">
             {
                 categories.map(category => (
                     <Link to={`/categoria/${category.id}`} key={category.id}>
-                        <li className={`category-list__category category-list__category--${category.id}`}>
+                        <li className={`categoria${category.id}`}>
                             {category.nombre}
                         </li>
                     </Link>
